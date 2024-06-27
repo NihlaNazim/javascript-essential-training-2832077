@@ -24,3 +24,14 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+console.log("our object:",backpack);
+
+console.log("Pocket number: ",backpack.pocketNum);
+
+console.log("lid open status: ",backpack.lidOpen)
+backpack.toggleLid(true);
+console.log("New lid open status: ",backpack.lidOpen)
+
+console.log("before right: ",backpack.strapLength.right);
+backpack.newStrapLength(10,15);
+console.log("after right: ",backpack.strapLength.right);
